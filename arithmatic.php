@@ -1,9 +1,9 @@
 <?php
-$favFood="Pasta";
-$price=90.5;
-$quantity=4;
+$favFood = "Pasta";
+$price = 90.5;
+$quantity = 4;
 
-$total=null;
+$total = null;
 
 //echo"I ordered {$quantity} X {$favFood}s <br>";
 
@@ -33,7 +33,7 @@ $total=null;
 
 //Increment Operator ++ , Decrement Operator -- 
 
-$count=0;
+$count = 0;
 
 // $count++;
 // echo "count = {$count} <br>";
@@ -50,11 +50,11 @@ $count=0;
 // echo "count = {$count} <br>";
 
 
-$count+=2; //increment by 2
+$count += 2; //increment by 2
 echo "count = {$count} <br>";
 
 
-$count+=2;
+$count += 2;
 echo "count = {$count} <br>";
 
 
@@ -68,9 +68,7 @@ echo "count = {$count} <br>";
 */
 
 
-$num=1+2-3*4/5**6;
-//12/5 to the power 6 = 12/15625
+$num = 1 + 2 - 3 * 4 / 5 ** 6;
+//1+2 - 12/5 to the power 6 = 1+2 - 12/15625
 //3-0.000768 = 2.999232
 echo $num;
-
-?>

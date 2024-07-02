@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Functions in Php</title>
 </head>
+
 <body>
     <h2>Calculate Circumference and area of a circle </h2>
-   <form action="mathFunc.php" method="post">
+    <form action="mathFunc.php" method="post">
         <label for="radius">Enter Radius :</label>
         <input type="text" name="radius" id="radius" required>
         <br>
         <br>
         <button type="submit">View Total</button>
         <br>
-    </form>  
-   <!-- <form action="mathFunc.php" method="post">
+    </form>
+    <!-- <form action="mathFunc.php" method="post">
         <label for="num1">Enter a number :</label>
         <br>
         <input type="text" name="num1" id="num1" required>
@@ -35,6 +37,7 @@
         <br>
     </form>   -->
 </body>
+
 </html>
 
 <?php
@@ -69,23 +72,23 @@
 //generate a random number
 //$total=rand(1,6); //a random number between 1 to 6
 
-$radius=$_POST["radius"];
-$circumferrence=null;
-$area=null;
-$volume=null;
+$radius = $_POST["radius"];
+$circumferrence = null;
+$area = null;
+$volume = null;
 
-$circumferrence = 2 * pi() * $radius;
-$circumferrence=round($circumferrence,2);
-$area=pi()* pow($radius ,2);
-$area = round($area,2);
-$volume=(4/3)* pi()* pow($radius,3);
-$volume=round($volume,2);
+$circumferrence = 2 * pi() * $radius; // 2 pi r
+$circumferrence = round($circumferrence, 2);
+$area = pi() * pow($radius, 2); // pi r square
+$area = round($area, 2);
+$volume = (4 / 3) * pi() * pow($radius, 3); // 4/3 pi r cube
+$volume = round($volume, 2);
 
 
 
-echo"The circumferrence of the circle is : {$circumferrence} cm <br>";
-echo"The area of the circle is : {$area} cm^2<br>";
-echo"The volume of the circle is : {$volume} cm^3<br>";
+echo "<br> The circumferrence of the circle is : {$circumferrence} cm <br>";
+echo "The area of the circle is : {$area} cm^2<br>";
+echo "The volume of the circle is : {$volume} cm^3<br>";
 
 
 
