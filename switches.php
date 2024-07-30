@@ -10,11 +10,11 @@
 <body>
     <form action="switches.php" method="post">
         <!-- for down counting -->
-        <!-- <label for="num">Enter a number to count from:</label>
+        <label for="num">Enter a number to count from:</label>
         <input type="number" name="num" id="num">
         <br>
         <br>
-        <button type="submit">Count</button> -->
+        <button type="submit">Count</button>
         <!-- for up counting -->
         <!-- <label for="num">Enter a number to count to:</label>
         <input type="number" name="num" id="num">
@@ -31,7 +31,7 @@
 <?php
 //switch-case in php have same syntax as js or c
 
-// $grade = "A";
+// $grade = "Pizza";
 
 // switch ($grade) {
 //     case "A":
@@ -50,11 +50,13 @@
 //         echo "You failed!<br>";
 //         break;
 //     default:
-//         echo "{$grade} is not a valid grade!";
+//         echo "{$grade} is not a valid grade!<br>";
 // }
 
 
 // $date = date("l"); //to get the current day
+
+// $date = "Pizza";
 
 // switch ($date) {
 //     case "Monday":
@@ -78,23 +80,27 @@
 //     case "Sunday":
 //         echo "Hurray!!! today is Sunday!";
 //         break;
+//     default:
+//         echo "{$date} is not a valid day";
+//         break;
 // }
 
 
 //for loop in php has same syntax as js or c
 
-// $count = $_POST["num"];
-$count = 20;
+$count = $_POST["num"];
+// $count = 5;
 
 //for decrement from count to 0
-// for ($i = $count; $i > 0; $i--) {
-//     // for ($i = 1; $i <= $count; $i++) {
-//     echo $i . "<br>"; //will print from 4 to 0
-//     // echo $i . "<br>"; //will print from 0 to 4
+for ($i = $count; $i > 0; $i--) {
+    // for ($i = 1; $i <= $count; $i++) {
+    echo $i . "<br>"; //will print from 4 to 0
+    // echo $i . "<br>"; //will print from 0 to 4
 
-// }
-
-//for increment from 0 to count
-for ($i = 0; $i <= $count; $i++) {
-    echo $i . "<br>";
 }
+
+// for increment from 0 to count
+// for ($i = 1; $i <= $count; $i++) {
+
+//     echo "<br>" . $i . "<br>";
+// }

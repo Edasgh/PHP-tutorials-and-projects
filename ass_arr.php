@@ -15,7 +15,8 @@ $capitals = array(
 
 
 //to view an element : arrayName[key];
-// $capitals["India"] = "Kolkata";
+$capitals["India"] = "Kolkata";
+$capitals["China"] = "Beijing";
 // echo $capitals["India"];
 
 //shift, pop same methods 
@@ -24,6 +25,7 @@ $capitals = array(
 // $keys = array_keys($capitals);
 // $values = array_values($capitals);
 
+// $capitals = array_reverse($capitals);
 
 
 $arrSize = count($capitals);

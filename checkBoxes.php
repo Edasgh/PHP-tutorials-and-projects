@@ -9,6 +9,7 @@
 
 <body>
     <form action="./checkBoxes.php" method="post">
+        <!-- If we put an array like this in name then we store the values (if submitted) in that array -->
         <input type="checkbox" name="foods[]" id="pz" value="Pizza">
         <label for="pz">Pizza</label>
         <br>
@@ -52,11 +53,19 @@ if (isset($_POST["submit"])) {
 
 
 
-    $foods = $_POST["foods"];
-
-    foreach ($foods as $food) {
-        echo "$food <br>";
+    $foods = null;
+    if (isset($_POST["foods"])) {
+        $foods = $_POST["foods"];
+        echo "You chose  : <br> ";
+        foreach ($foods as $food) {
+            echo $food . "<br>";
+        }
+    } else {
+        echo "Please select a food from the option!<br>";
     }
+
+
+
 
 
     // if (isset($_POST["Pizza"])) {

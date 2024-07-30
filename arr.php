@@ -45,7 +45,16 @@ echo "The size of foods array is $foods_size" . "<br>";
 // }
 
 
+// for ($i = 0; $i < $foods_size; $i++) {
+//     echo "The element at $i is : " . $foods[$i] . "<br>";
+// }
 
-for ($i = 0; $i < $foods_size; $i++) {
-    echo "The element at $i is : " . $foods[$i] . "<br>";
+array_push($foods, "Pineapple", "Qiwi");
+
+$reversedFoods = array_reverse($foods);
+
+$foods = $reversedFoods;
+
+foreach ($foods as $food) {
+    echo $food . "<br>";
 }
