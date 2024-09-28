@@ -1,7 +1,7 @@
 <?php
 
 $db_name="businessdb";
-$db_password ="264@29ededED";
+$db_password ="";
 $db_server="localhost";
 $db_user="root";
 $conn="";
