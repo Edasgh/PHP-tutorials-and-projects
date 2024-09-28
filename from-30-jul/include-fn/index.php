@@ -3,6 +3,7 @@
 // and includes it in your php file
 // Sections of our website becomes reusable
 // Changes only need to be made in one place
+// include(fileName or filePath)
 
 include("header.html");
 ?>
